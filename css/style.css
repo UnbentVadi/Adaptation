@@ -14,3 +14,10 @@ body {
   background: #9B4B4B;
 }
 
+@media screen and (max-width: 768px) {
+	.block { width: 48%; }
+}
+
+@media screen and (max-width: 480px) {
+	.block { width: 100%; }
+}
