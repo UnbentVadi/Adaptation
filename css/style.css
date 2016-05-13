@@ -1,23 +1,30 @@
 
 body {
   background: #fff;
-  width: 96%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .block {
+  float: left;
   width: 24%;
+  margin: 0.5%;
   display: inline-block;
   height: 200px;
   background: #9B4B4B;
 }
 
+body::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
 @media screen and (max-width: 768px) {
-	.block { width: 48%; }
+  .block { width: 49%; }
 }
 
 @media screen and (max-width: 480px) {
-	.block { width: 100%; }
+  .block { width: 100%; }
 }
