@@ -5,9 +5,21 @@ body {
 }
 
 .block {
+	display: inline-block;
     width: 24%;
-    display: inline-block;
-    height: 150px;
+    height: 150px;   
+    float:left;
     background: #000;
+    margin: 1% 0.5% 1%;
 }
 
+@media screen and (max-width:768px) {
+ 	.block {
+ 		width: 49%;
+ 	}		
+}
+@media screen and (max-width: 480px) {
+	.block {
+		width: 100%;
+	}
+}
